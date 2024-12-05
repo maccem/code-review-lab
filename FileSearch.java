@@ -41,7 +41,7 @@ public class FileSearch {
             }
             fileScanner.close();
         } catch(FileNotFoundException e) {
-            e.printStackTrace();
+            System.err.println("File \'" + filePath + "\' not found. Please ensure that the file exists and is spelled correctly and try again.");
         }
     }
 }
